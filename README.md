@@ -40,14 +40,11 @@ This is a beta release for testing / benchmarking before we integrate that with
 the rest of the repo.
 
 Currently released:
-- FP16 forward and backward
-
-Coming soon in the next couple of days / next week:
-- BF16
-- Variable length (FP16, BF16)
-- FP8 forward.
+- FP16 / BF16 forward and backward, FP8 forward
 
 Requirements: H100 / H800 GPU, CUDA >= 12.3.
+
+For now, we highly recommend CUDA 12.3 for best performance.
 
 To install:
 ```sh
@@ -372,6 +369,10 @@ Thanks to @beginlner for this contribution.
 
 Support attention with softcapping, as used in Gemma-2 and Grok models.
 Thanks to @Narsil and @lucidrains for this contribution.
+
+### 2.7: Compatibility with torch compile
+
+Thanks to @ani300 for this contribution.
 
 ## Performance
 
